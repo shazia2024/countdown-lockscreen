@@ -1,0 +1,50 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .app {
+    width: 100%;
+    min-height: 100dvh;
+    padding: 0;
+  }
+
+  .countdown-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100dvh;
+    border-radius: 0;
+    padding: 20px;
+  }
+
+  .countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .countdown-card {
+    min-width: 0;
+  }
+
+  button {
+    min-height: 44px;
+  }
+}
